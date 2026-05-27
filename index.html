@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROLLER SKATERS RETREAT IBIZA | Skate. Dance. Connect.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#9c4141",
+                      "surface-tint": "#9a442d",
+                      "surface-container-highest": "#e4e2de",
+                      "on-error-container": "#93000a",
+                      "background": "#fbf9f5",
+                      "outline": "#88726d",
+                      "surface-variant": "#e4e2de",
+                      "on-tertiary-fixed-variant": "#7d2a2c",
+                      "on-secondary-fixed-variant": "#6f3800",
+                      "surface": "#fbf9f5",
+                      "primary": "#9a442d",
+                      "surface-container-high": "#eae8e4",
+                      "on-surface": "#1b1c1a",
+                      "on-secondary": "#ffffff",
+                      "outline-variant": "#dbc1ba",
+                      "raw-linen": "#FDFBF7",
+                      "surface-container-low": "#f5f3ef",
+                      "secondary": "#8e4e14",
+                      "tertiary-fixed-dim": "#ffb3b0",
+                      "sunset-terracotta": "#E07A5F",
+                      "primary-fixed": "#ffdbd2",
+                      "surface-bright": "#fbf9f5",
+                      "deep-earth": "#3D405B",
+                      "tertiary-container": "#e27775",
+                      "secondary-fixed": "#ffdcc4",
+                      "on-secondary-container": "#783d01",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#ffb780",
+                      "on-tertiary-fixed": "#410006",
+                      "on-primary-container": "#5b1604",
+                      "neon-electric": "#00F0FF",
+                      "golden-hour": "#F4A261",
+                      "primary-container": "#e07a5f",
+                      "on-secondary-fixed": "#2f1400",
+                      "on-primary": "#ffffff",
+                      "on-background": "#1b1c1a",
+                      "balearic-pink": "#F28482",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#f2f0ed",
+                      "on-primary-fixed-variant": "#7c2e19",
+                      "on-tertiary-container": "#5d1216",
+                      "surface-container": "#efeeea",
+                      "tertiary-fixed": "#ffdad8",
+                      "inverse-primary": "#ffb4a1",
+                      "primary-fixed-dim": "#ffb4a1",
+                      "on-primary-fixed": "#3c0800",
+                      "neon-fuchsia": "#FF00FF",
+                      "secondary-container": "#ffab69",
+                      "surface-dim": "#dbdad6",
+                      "on-surface-variant": "#55423e",
+                      "inverse-surface": "#30312e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "section-gap": "120px",
+                      "margin-desktop": "80px",
+                      "margin-mobile": "20px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": ["Montserrat"],
+                      "label-bold": ["Montserrat"],
+                      "headline-sm": ["Montserrat"],
+                      "body-lg": ["Montserrat"],
+                      "display-xl": ["Anton"],
+                      "display-lg": ["Anton"],
+                      "headline-md": ["Anton"],
+                      "label-sm": ["Montserrat"],
+                      "display-lg-mobile": ["Anton"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                      "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                      "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}],
+                      "display-xl": ["96px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "display-lg": ["64px", {"lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .neon-glow:hover { box-shadow: 0 0 15px 2px rgba(0, 240, 255, 0.6); }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-size: cover; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center h-24 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<a class="font-display-lg text-display-lg-mobile md:text-headline-md text-deep-earth" href="index.html">ROLLER SKATERS RETREAT IBIZA</a>
+<div class="hidden md:flex gap-base">
+<a class="font-label-bold text-label-bold px-4 py-2 text-deep-earth hover:text-sunset-terracotta transition-colors" href="index.html#concept">Concept</a>
+<a class="font-label-bold text-label-bold px-4 py-2 text-deep-earth hover:text-sunset-terracotta transition-colors" href="index.html#teachers">Teachers</a>
+<a class="font-label-bold text-label-bold px-4 py-2 text-deep-earth hover:text-sunset-terracotta transition-colors" href="villa.html">Villa</a>
+<a class="font-label-bold text-label-bold px-4 py-2 text-deep-earth hover:text-sunset-terracotta transition-colors" href="index.html#itinerary">Itinerary</a>
+<a class="font-label-bold text-label-bold px-4 py-2 text-deep-earth hover:text-sunset-terracotta transition-colors" href="index.html#packages">Packages</a>
+</div>
+<a class="bg-deep-earth text-white font-label-bold text-label-bold px-6 py-3 uppercase tracking-widest hover:bg-sunset-terracotta transition-all active:scale-95" href="index.html#packages">Reserva tu plaza</a>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrH-3OFJHeilzLN9eAsxXLZasaXj6JnkkamAjCZbMD_QxdUK1AbyN-j5HJLglYib4mN-IyRyNVEjOQBYslbXEW8vuVA-ku8LUxcuVEZ3Na6RdO02dXLpwLwOgZPN61RFiVntBgoU8xi77NJ4o776Ksc923UQQf_IJYCvplm4RWST6c2o5KQrmGS_OOlj0GlfBopK5ZK5V_ZEjfMBh4CZaStYTmT8sww7LT0qPzKT7E8M8JmKGmgxiIsBe7txYK-zY-qz5kGLaq_4a2" alt="Hero"/>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl">
+<h1 class="font-display-xl text-white text-display-lg-mobile md:text-display-xl mb-6 drop-shadow-lg">ROLLER SKATERS RETREAT IBIZA</h1>
+<p class="font-headline-sm text-white mb-10 tracking-[0.2em] uppercase">Skate. Dance. Connect. Live Ibiza.</p>
+<a class="inline-block border-2 border-neon-electric text-neon-electric font-label-bold text-label-bold px-10 py-5 uppercase tracking-widest neon-glow transition-all backdrop-blur-sm" href="#packages">
+                Reserva tu plaza
+            </a>
+</div>
+</section>
+
+<!-- Concept Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto reveal" id="concept">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-sunset-terracotta/20 -z-10 group-hover:inset-0 transition-all duration-500"></div>
+<img class="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWcHsv8jaJ9E8sn8SQAi5jsma_IKtH7fS1QR2MOpRz5jYvWP2bXn3vxnA4LVXEv3qKoUWKtulSTvgy5d5qHn_KCi0tEGvaBg-nns02PQDgZRAN4QncVAfmRImOdkt2EoK1xTwZgUsh1D-nqmxFJzcwepN-jhwF6yWHi2XvI9yyBw_Arr3wUNxLEYYiGd0tVuzrOK9JQ243S4aIHga8EuQJL2VSbTsR6Rn4rQQI6JPLJ9v17DP9706EAk-hepmEqPBQ0fbLs0OYPL29" alt="Concept"/>
+</div>
+<div class="space-y-base md:pl-12">
+<span class="text-sunset-terracotta font-label-bold text-label-bold uppercase tracking-widest">The Soul of the Retreat</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-deep-earth leading-none mb-8">EL CONCEPTO</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                    No es solo un campamento de patinaje, es un santuario de movimiento libre de juicios. 4 días y 3 noches de inmersión total en Ibiza.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                    Diseñado para el patinador moderno que busca el equilibrio perfecto entre la técnica de clase mundial y la desconexión total. Desde sesiones de Roller Yoga al amanecer hasta workshops de Jam Skating bajo las estrellas, nuestra misión es elevar tu flujo mientras te rodeas de la energía eléctrica de la isla blanca.
+                </p>
+</div>
+</div>
+</section>
+
+<!-- Line-Up Section -->
+<section class="bg-surface-container-low py-section-gap" id="teachers">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto reveal">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-deep-earth mb-4">THE MASTERS</h2>
+<div class="w-24 h-1 bg-neon-fuchsia mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Teacher 1 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvdS14m1U3NpW_bphU8qUAaT8JiVu3YRSwnXG0N1IEy7os7V4ePc0k3QGtKMa4CE6uOUaKrsvGFjBrns3MHrU85BqGXNNMx5qGE-aePTH-44uSIitY2M_Az9NaOxLkd2fWM4kvVGp-PmGs5dwPAXLbfItOe2hq1Gtyabtsog_whLJulsb1zSLtg6ulY-cBJ80xgHH4uPhXCQo1BS03g_SOBpFNuE5R7VLQlWZhqOsK8QcQ2yRMDX8o5l6zRAAqVO3wWAVFP-kR1hmL" alt="Teacher 1"/>
+<div class="absolute bottom-0 left-0 bg-deep-earth text-white px-4 py-2 font-label-bold text-label-bold">ROLLER DANCE INTERNACIONAL</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Patrizia</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">@sundownskater</p>
+<p class="text-body-md text-on-surface-variant">Liderando la escena global de roller dance con un estilo fluido que fusiona técnica y libertad.</p>
+</div>
+</div>
+<!-- Teacher 2 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px] bg-deep-earth/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[100px] text-sunset-terracotta/20">question_mark</span>
+<div class="absolute bottom-0 left-0 bg-neon-fuchsia text-white px-4 py-2 font-label-bold text-label-bold">GUEST STAR</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Profesor Invitado Sorpresa</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">TOP SECRET</p>
+<p class="text-body-md text-on-surface-variant">Un referente mundial del Jam Skating de alto rendimiento volando directamente a Ibiza.</p>
+</div>
+</div>
+<!-- Teacher 3 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8gGrdOj0LOTDodYy8Au8V6rQNZ2b87y_8ivxBLbso8WYtPLcJhAI1zrPEaA3X15Ty7u18n31z07NZcjl4tQFsZk-aytf9MMbCgF3THmlQg169KipJg-TspMK9G3VWSWOl6UQSp_MFys5r2yyQr9res-SDUwIE5MIIApA_25msLaCb2qsMqYmzsC8N08wt-AVwyewySpM_NN51_4J8ds5k75xBCtqrknHteLQ1LzABIo09Jd1PCn1nkE-G3KOCeZnTPi_dR4oueffZ" alt="Teacher 3"/>
+<div class="absolute bottom-0 left-0 bg-deep-earth text-white px-4 py-2 font-label-bold text-label-bold">ROLLER DANCE ESPAÑA</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Afribat</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">THE FLOW MASTER</p>
+<p class="text-body-md text-on-surface-variant">Especialista en footwork complejo y la esencia rítmica del patinaje nacional.</p>
+</div>
+</div>
+<!-- Teacher 4 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuDe4LrkYiebD4BsdVoYkpFVYgqS8gVEqK3JfpA8PRC2EIsAxw4fw08an3Z8fslOyKDQcIC0FPYdV1rM88VIhkWTOFk8ph2Qk8SiIZBTxj9850JxAXzwtBVsaRJs3h81dI3d_l0TUgykL2xdWzf0JY8rcSf4LjksjuXknS8jGyFi16OHsO4eRlVx9S80clxqvbtOWAY4Zzpw4E496lU-yX3PX9Mjvoh0hhsf6dd64u0IsUu-CtQKSOV20GZf8q-ZkE2iLLTIQOwTVO" alt="Teacher 4"/>
+<div class="absolute bottom-0 left-0 bg-deep-earth text-white px-4 py-2 font-label-bold text-label-bold">HOUSE DANCE</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Said Tanshy</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">GROOVE &amp; REBOTE</p>
+<p class="text-body-md text-on-surface-variant">Entiende el 'bounce' desde el suelo para llevar tu patinaje a una nueva dimensión rítmica.</p>
+</div>
+</div>
+<!-- Teacher 5 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Tud-WUXhjpXqbGT7pwQCdIJN4nMB4HY54-B8p-tNKQTbd3nJ63Dgg0jVzZ43fgTOk_Mn7QIVoKllP0y_PJdDqyb13vxaU6fZ9Aw6WureNsi8em8jPq9nSsItzfmkR_nHNzFzy_eKdyhpko2Qi2y_ot6gv-cNMUExq9YBoX8IAiE5jt91oCWVz_citsBv3U2OYTi7uAUXfd8PyUCxNbVU3kLJCumsck4INVcIhjD2VxZ2qzmzpt8pQzENBfgC88CubUSbjh8nqcNM" alt="Teacher 5"/>
+<div class="absolute bottom-0 left-0 bg-deep-earth text-white px-4 py-2 font-label-bold text-label-bold">BREAK DANCE</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Profesor de Break Dance</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">FOOTWORK &amp; CONTROL</p>
+<p class="text-body-md text-on-surface-variant">Técnicas de equilibrio y potencia aplicadas al control sobre ocho ruedas.</p>
+</div>
+</div>
+<!-- Teacher 6 -->
+<div class="bg-white border border-sunset-terracotta/10 group overflow-hidden">
+<div class="relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBNqN22Lq2rk-k-saUgK6QyJyG4S9IVrrinIV7DMJPiLN6aKkYkEy8LMUmub562rDgGH6nDcFGPM3P7gdgBfX9RfO9HVBrfBYg6XcCItLj4CuzgwrI1isVhpxsO4FdAcRJLMMwa8hiaflZUwwA7ZF1w7BtYxUmRT3kJ9hMA3oabh6vAz9Sisv86Ip3xrdzhIRmc1dYmzCzqm5O4Q-YlB3B7cthyC8gnLoJKbQ6LksP6OZfp0smhn1UXK3MpvNEBIxGatYEZVmlBOGa" alt="Teacher 6"/>
+<div class="absolute bottom-0 left-0 bg-deep-earth text-white px-4 py-2 font-label-bold text-label-bold">RECOVERY</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-sm text-headline-sm text-deep-earth mb-1">Facilitador Holístico</h3>
+<p class="text-sunset-terracotta font-label-bold text-label-bold mb-4">ROLLER YOGA</p>
+<p class="text-body-md text-on-surface-variant">Recuperación muscular y movilidad específica para patinadores para un bienestar total.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Itinerary Section -->
+<section class="bg-deep-earth text-raw-linen py-section-gap" id="itinerary">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto reveal">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-16 text-center">THE JOURNEY</h2>
+<div class="space-y-base relative before:content-[''] before:absolute before:left-4 md:before:left-1/2 before:w-px before:h-full before:bg-sunset-terracotta/30">
+<!-- Day 1 -->
+<div class="relative flex flex-col md:flex-row items-center mb-12">
+<div class="md:w-1/2 md:pr-12 text-left md:text-right">
+<h3 class="font-headline-md text-sunset-terracotta mb-2">DIA 01</h3>
+<p class="font-body-lg font-bold mb-2">Check-in &amp; Soul Connection</p>
+<p class="text-raw-linen/70">Llegada a Can Rafa, entrega de Welcome Packs exclusivos, sesión de Roller Yoga para soltar el viaje y primera cena bajo las estrellas.</p>
+</div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-neon-electric rounded-full border-4 border-deep-earth z-10"></div>
+<div class="md:w-1/2 md:pl-12 mt-4 md:mt-0"></div>
+</div>
+<!-- Day 2 -->
+<div class="relative flex flex-col md:flex-row items-center mb-12">
+<div class="md:w-1/2 md:pr-12"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-sunset-terracotta rounded-full border-4 border-deep-earth z-10"></div>
+<div class="md:w-1/2 md:pl-12 text-left">
+<h3 class="font-headline-md text-sunset-terracotta mb-2">DIA 02</h3>
+<p class="font-body-lg font-bold mb-2">Urban Culture Day</p>
+<p class="text-raw-linen/70">Intensivos de House &amp; Break Dance, Pool Hangout para refrescar ideas y salida grupal VIP a los mejores clubes de la isla.</p>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="relative flex flex-col md:flex-row items-center mb-12">
+<div class="md:w-1/2 md:pr-12 text-left md:text-right">
+<h3 class="font-headline-md text-sunset-terracotta mb-2">DIA 03</h3>
+<p class="font-body-lg font-bold mb-2">Island Flow</p>
+<p class="text-raw-linen/70">Beach Day en calas secretas, Sunset Skate Session en el paseo marítimo y el legendario Fiesta Paella Night.</p>
+</div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-balearic-pink rounded-full border-4 border-deep-earth z-10"></div>
+<div class="md:w-1/2 md:pl-12 mt-4 md:mt-0"></div>
+</div>
+<!-- Day 4 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-deep-earth z-10"></div>
+<div class="md:w-1/2 md:pl-12 text-left">
+<h3 class="font-headline-md text-sunset-terracotta mb-2">DIA 04</h3>
+<p class="font-body-lg font-bold mb-2">Gratitude &amp; Closure</p>
+<p class="text-raw-linen/70">Recuperación muscular guiada, círculo de cierre y despedida (Check-out) con el corazón y las ruedas llenas de energía.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Packages Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto reveal" id="packages">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-deep-earth mb-4">ELIGE TU EXPERIENCIA</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Precios por persona. Incluye alojamiento, workshops, comidas y traslados internos seleccionados.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-end">
+<!-- Pack 1 -->
+<div class="bg-white p-8 border border-sunset-terracotta/20 flex flex-col h-full hover:border-sunset-terracotta transition-all duration-300">
+<span class="font-label-bold text-label-bold text-sunset-terracotta mb-4 block">ESSENTIAL</span>
+<h3 class="font-headline-md text-deep-earth mb-2">Bunk Bunnies</h3>
+<p class="text-on-surface-variant mb-8 text-sm">Cama en habitación compartida (4-6 personas). Ideal para hacer nuevas conexiones.</p>
+<div class="text-4xl font-display-lg text-deep-earth mb-8">€1,250</div>
+<ul class="space-y-3 mb-12 flex-grow">
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Todos los talleres</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Pensión completa</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Kit de Bienvenida</li>
+</ul>
+<button class="w-full py-4 border border-deep-earth text-deep-earth font-label-bold uppercase tracking-widest hover:bg-deep-earth hover:text-white transition-all">Seleccionar</button>
+</div>
+<!-- Pack 2 (Featured) -->
+<div class="bg-deep-earth text-raw-linen p-10 border-t-4 border-neon-electric flex flex-col h-full transform scale-105 shadow-2xl relative z-10">
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-neon-electric text-deep-earth px-6 py-1 font-label-bold text-[10px] uppercase tracking-tighter">Más popular</div>
+<span class="font-label-bold text-label-bold text-neon-electric mb-4 block">PREMIUM</span>
+<h3 class="font-headline-md text-white mb-2">Double Diva</h3>
+<p class="text-raw-linen/70 mb-8 text-sm">Habitación doble compartida con baño en suite. El equilibrio perfecto entre confort y comunidad.</p>
+<div class="text-5xl font-display-lg text-neon-electric mb-8">€1,850</div>
+<ul class="space-y-3 mb-12 flex-grow">
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-neon-electric text-sm">check</span> Todos los talleres + VIP</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-neon-electric text-sm">check</span> Masaje deportivo de 60 min</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-neon-electric text-sm">check</span> Acceso VIP Club Tour</li>
+</ul>
+<button class="w-full py-5 bg-neon-electric text-deep-earth font-label-bold uppercase tracking-widest hover:bg-white transition-all shadow-lg neon-glow">Reserva Ahora</button>
+</div>
+<!-- Pack 3 -->
+<div class="bg-white p-8 border border-sunset-terracotta/20 flex flex-col h-full hover:border-sunset-terracotta transition-all duration-300">
+<span class="font-label-bold text-label-bold text-sunset-terracotta mb-4 block">ULTIMATE LUXE</span>
+<h3 class="font-headline-md text-deep-earth mb-2">Queen Solo</h3>
+<p class="text-on-surface-variant mb-8 text-sm">Habitación privada suite de lujo. Máxima exclusividad y descanso regenerativo.</p>
+<div class="text-4xl font-display-lg text-deep-earth mb-8">€2,600</div>
+<ul class="space-y-3 mb-12 flex-grow">
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Habitación privada</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Sesión privada con profesor</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-green-500 text-sm">check</span> Traslados aeropuerto privados</li>
+</ul>
+<button class="w-full py-4 border border-deep-earth text-deep-earth font-label-bold uppercase tracking-widest hover:bg-deep-earth hover:text-white transition-all">Seleccionar</button>
+</div>
+</div>
+</section>
+
+<!-- Footer Shell -->
+<footer class="bg-deep-earth text-raw-linen border-t border-sunset-terracotta/20">
+<div class="py-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-base max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<a class="font-display-lg text-display-lg-mobile text-sunset-terracotta" href="#">ROLLER SKATERS RETREAT IBIZA</a>
+<p class="text-raw-linen/60 max-w-sm">Únete a nuestra newsletter para recibir actualizaciones exclusivas y drops de plazas anticipadas.</p>
+<form class="flex border-b border-raw-linen/30 py-2">
+<input class="bg-transparent border-none focus:ring-0 text-raw-linen w-full placeholder:text-raw-linen/30" placeholder="TU EMAIL" type="email"/>
+<button class="material-symbols-outlined hover:text-neon-electric transition-colors" type="submit">arrow_forward</button>
+</form>
+</div>
+<div class="space-y-4 md:pl-20">
+<h4 class="font-label-bold text-label-bold text-sunset-terracotta uppercase">Connect</h4>
+<div class="flex flex-col gap-2">
+<a class="text-raw-linen/70 hover:text-neon-electric transition-transform hover:translate-x-1" href="#">Instagram</a>
+<a class="text-raw-linen/70 hover:text-neon-electric transition-transform hover:translate-x-1" href="#">TikTok</a>
+<a class="text-raw-linen/70 hover:text-neon-electric transition-transform hover:translate-x-1" href="#">WhatsApp Community</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-bold text-label-bold text-sunset-terracotta uppercase">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="text-raw-linen/70 hover:text-neon-electric transition-transform hover:translate-x-1" href="#">Cancellation Policy</a>
+<a class="text-raw-linen/70 hover:text-neon-electric transition-transform hover:translate-x-1" href="#">Terms of Service</a>
+<p class="mt-8 text-xs text-raw-linen/40 uppercase tracking-widest">© 2024 ROLLER SKATERS RETREAT IBIZA. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+        // Scroll animations
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Trigger once on load
+
+        // Nav shadow & blur on scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl', 'h-20');
+                nav.classList.remove('h-24');
+            } else {
+                nav.classList.remove('shadow-xl', 'h-20');
+                nav.classList.add('h-24');
+            }
+        });
+</script>
+</body>
+</html>
